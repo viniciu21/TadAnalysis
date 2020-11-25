@@ -98,9 +98,9 @@ int main() {
 
             //  Insere o tempo médio de inserção e remoção na lista e na fila nos seus respectivos arquivos de saída
             doublyLinkedListInsertion << index << " " << doublyLinkedListInsertionAvarege << endl;
-            doublyLinkedListDelete << index << doublyLinkedListDeleteAvarege << endl;
-            queueInsertion << index << queueInsertionAvarege << endl;
-            queueDelete << index << queueDeleteAvarege << endl;
+            doublyLinkedListDelete << index << " " << doublyLinkedListDeleteAvarege << endl;
+            queueInsertion << index << " " << queueInsertionAvarege << endl;
+            queueDelete << index << " " << queueDeleteAvarege << endl;
 
     }
 
