@@ -97,10 +97,10 @@ int main() {
             queueDeleteAvarege = queueDeleteSum / 50;
 
             //  Insere o tempo médio de inserção e remoção na lista e na fila nos seus respectivos arquivos de saída
-            doublyLinkedListInsertion << doublyLinkedListInsertionAvarege << " " << "\n";
-            doublyLinkedListDelete << doublyLinkedListDeleteAvarege << " " << "\n";
-            queueInsertion << queueInsertionAvarege << " " << "\n";
-            queueDelete << queueDeleteAvarege << " " << "\n";
+            doublyLinkedListInsertion << index << " " << doublyLinkedListInsertionAvarege << endl;
+            doublyLinkedListDelete << index << doublyLinkedListDeleteAvarege << endl;
+            queueInsertion << index << queueInsertionAvarege << endl;
+            queueDelete << index << queueDeleteAvarege << endl;
 
     }
 
