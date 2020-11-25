@@ -20,8 +20,6 @@ int main() {
     //  Vetores para armazenar os tempos de execução por grupo de amostra
     long double linked_insert_values[100], queue_insert_values[100], linked_delete_values[100], queue_delete_values[100];
 
-    short value{0};
-
     for (size_t index{100}; index <= 1000; index += 100) {
 
         // Variáveis para guardar os tempos de exeução de inserção na lista duplamente encadeada
@@ -66,10 +64,10 @@ int main() {
 
                 
             //  Calcula o tempo de execução da remoção na lista duplamente encadeada
-            auto startChrono = chrono::steady_clock::now();
+            startChrono = chrono::steady_clock::now();
             LinkedList->removeFirst();
-            auto endChrono = chrono::steady_clock::now();
-            auto timeDifference = endChrono - startChrono;
+            endChrono = chrono::steady_clock::now();
+            timeDifference = endChrono - startChrono;
 
             linked_delete_values[j] = chrono::duration<long double, std::nano>(timeDifference).count(); 
 
@@ -103,7 +101,13 @@ int main() {
             doublyLinkedListDelete << doublyLinkedListDeleteAvarege << " " << "\n";
             queueInsertion << queueInsertionAvarege << " " << "\n";
             queueDelete << queueDeleteAvarege << " " << "\n";
+
     }
+
+    doublyLinkedListInsertion.close();
+    queueInsertion.close();
+    doublyLinkedListDelete.close();
+    queueDelete.close();
 
     return 0;
 }
