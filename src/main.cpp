@@ -12,7 +12,7 @@ int main() {
     ofstream doublyLinkedListInsertion, queueInsertion, doublyLinkedListDelete, queueDelete;
 
     //  Arquivos de saida
-    doublyLinkedListInsertion.open("../data/linkedInsertion.txt");
+    doublyLinkedListInsertion.open("../data/insertion/linkedInsertion.txt");
     queueInsertion.open("../data/insertion/queueInsertion.txt");
     doublyLinkedListDelete.open("../data/delete/linkedDelete.txt");
     queueDelete.open("../data/delete/queueDelete.txt");
