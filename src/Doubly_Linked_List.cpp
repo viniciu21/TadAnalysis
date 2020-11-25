@@ -28,7 +28,6 @@ void Doubly_Linked_List::removeFirst() {
 void Doubly_Linked_List::print_nodes() {
     Node *x = head->get_next();
     while (x != NULL) {
-        cout << x->get_key() << endl;
         x = x->get_next();
     }
 }

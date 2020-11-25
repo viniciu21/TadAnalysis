@@ -25,5 +25,4 @@ Node *Node::get_prev() {
 }
 
 Node::~Node() {
-    cout << "Delete " << this->key << " value" << endl;
 }
