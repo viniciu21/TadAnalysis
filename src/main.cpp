@@ -84,7 +84,7 @@ int main() {
         }
 
         //  Calcula média de tempo de inserção e remoção na lista e na fila para o tamanho N
-            for (int z{0}; z < 100; z++) {
+            for (int z{0}; z < 50; z++) {
                 doublyLinkedListInsertionSum += linked_insert_values[z];
                 doublyLinkedListDeleteSum += linked_delete_values[z];
                 queueInsertionSum += queue_insert_values[z];
