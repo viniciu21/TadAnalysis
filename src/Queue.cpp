@@ -16,7 +16,7 @@ queue::~queue() {
     delete[] arr;
 }
 
-void queue::dequeue() {
+void queue::dequeue_all() {
     if (isEmpty()) {
         exit(EXIT_FAILURE);
     }

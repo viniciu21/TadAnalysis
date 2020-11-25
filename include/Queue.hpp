@@ -12,7 +12,7 @@ class queue {
     queue(int size);
     ~queue();
 
-    void dequeue();
+    void dequeue_all();
     void enqueue(int x);
     int peek();
     int size();
