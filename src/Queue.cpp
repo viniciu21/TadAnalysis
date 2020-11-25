@@ -20,7 +20,7 @@ void queue::dequeue_all() {
     if (isEmpty()) {
         exit(EXIT_FAILURE);
     }
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < capacity; i++) {
         front = (front + 1) % capacity;
     }
     count = 0;
