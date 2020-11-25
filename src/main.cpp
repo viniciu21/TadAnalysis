@@ -20,7 +20,7 @@ int main() {
     //  Vetores para armazenar os tempos de execução por grupo de amostra
     long double linked_insert_values[100], queue_insert_values[100], linked_delete_values[100], queue_delete_values[100];
 
-    for (size_t index{100}; index <= 1000; index += 100) {
+    for (size_t index{100}; index <= 10000; index += 100) {
 
         // Variáveis para guardar os tempos de exeução de inserção na lista duplamente encadeada
         long double doublyLinkedListInsertionSum{0}, doublyLinkedListInsertionAvarege;
